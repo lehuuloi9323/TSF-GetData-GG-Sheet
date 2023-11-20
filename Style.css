@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+nav{
+    background: #339966;
+    height: 80px;
+    width: 100%;
+}
+
+label .logo{
+    color: #fff;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+.nav ul{
+    float: right;
+    margin-right:20px;   
+}
+
+.nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+
+
+
+.Style-Menu{
+    height: 100px;
+}
+
+.stylehover{
+    color: #fff;
+    border-radius:15px ;
+}
+
+.stylehover:hover{
+    color: black;
+    background-color: #fff;
+    border-radius: 15px;
+    transition: 1s;
+}
+
+
+.style-button:hover{
+background-color: black;
+color: #fff;
+transition: 0.7s;
+}
+
+.can-giua-div{
+    display: flex;
+    align-items: center;
+}
+
+/*chọn ngân hàng*/
+.picture-nganhang{
+    width: 150px;
+    height: 55px;
+}
+
+
+#table-tieude{
+    margin: 0 auto;
+    
+    width: 1296px;
+    text-align: left;
+    color: #339966;
+    background-color: white;
+    padding: 25px 0px;
+    
+}
+
+
+#table-contain{
+    margin: 0 auto;
+    width: 960px;
+    border: 1px solid black;
+    text-align: center;
+    border-collapse: collapse ;
+    margin-bottom: 50px;
+    
+}
+
+.tr-le{
+    background-color: white;
+}
+
+.tr-chan{
+    
+}
+
+#table-contain, th, td{
+    border: 0px solid black;
+    font-size: 15px;
+    font-weight: bold;
+    min-height: 220px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#table-contain th{
+    background-color: #339966;
+    color: white;
+    padding: 15px;
+}
+
+#table-contain tr td a img {
+    width: 120px;
+    height: 55px;
+    display: block;
+    margin: auto;
+    padding: 15px;
+}
+
+#table-contain tr td input{
+    border: 0 solid #339966;
+    background-color: #339966;
+    width: 150px;
+    height: 60px;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+#table-contain tr td span{
+   display: inline-block;
+}
+
+#table-contain tr td input:hover{
+    background-color: black;
+    color: white;
+}
+
+
+.link{
+    text-decoration: none;
+    color: #666;
+    font-size: 12px;
+}
+
+.link:hover{
+    text-decoration: none;
+    color: #666;
+    font-size: 12px;
+}
+
+/*foter*/
+.foter-wrapper{
+    width: 100%;
+    min-height: 240px;
+    background-color: #339966;
+}
+
+.foter-link{
+    text-decoration: none;
+    color: #fff;
+}
+
+.foter-link:hover{
+    color: #fff;
+}
+
+
+#end{
+    width: 960px;
+    height: 15px;
+    margin: 0 auto;
+    color: white;
+    padding-top: 15px;
+}
+
+
+
+
+/*Range*/

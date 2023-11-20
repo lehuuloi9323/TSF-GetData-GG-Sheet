@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="bootstraps/css/bootstrap.min.css" rel="stylesheet">
+  <link href="Style.css" rel="stylesheet" />
+  <script type="text/javascript" src="Spinner.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Css js for range  -->
+  <link href="./assets/css/jquery-ui.min.css" rel="stylesheet" type="text/css">
+  <link href="./assets/css/style-main.css" rel="stylesheet" type="text/css">
+
+  <script src="./assets/js/jquery-2.2.4.min.js"></script>
+  <script src="./assets/js/jquery-ui.min.js"></script>
+
+  <script src="./assets/js/script.js"></script>
+
+  <link href="./assets/theme/css/theme.css" rel="stylesheet" type="text/css">
+  <title>Document</title>
+</head>
+
+<body>
+  <!--loading-->
+  <div class="container-fluid text-center" id="Spinner"
+    style="height: 100%; z-index: 10; position: relative; position: fixed; display: none;">
+    <div class="row">
+      <div class="opacity-25" style="background-color: #999; position: absolute; width: 100%; height: 100%;">
+
+      </div>
+      <div class="col-md-12 align-items-center" style="z-index: 4; margin-top: 250px;">
+        <div class="spinner-grow text-light" role="status" style="width: 3rem; height: 3rem;">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-secondary" role="status" style="width: 3rem; height: 3rem;">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-light" role="status" style="width: 3rem; height: 3rem;">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-secondary" role="status" style="width: 3rem; height: 3rem;">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-light" role="status" style="width: 3rem; height: 3rem;">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-secondary" role="status" style="width: 3rem; height: 3rem;">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-light" role="status" style="width: 3rem; height: 3rem;">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-secondary" role="status" style="width: 3rem; height: 3rem;">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End loading -->
+
+  <!--Menu-->
+  <nav class="navbar navbar-expand-lg" style="background-color: #339966; z-index: 1;">
+    <div class="container">
+      <a class="navbar-brand text-white" href="#">Tư Vấn Tài Chính</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <!-- <a class="nav-link stylehover" aria-current="page" href="#">GIỚI THIỆU</a>
+          <a class="nav-link stylehover" href="#">SẢN PHẨM</a>
+          <a class="nav-link stylehover" href="#">ƯỚC TÍNH KHOẢNG VAY</a>
+          <a class="nav-link stylehover" href="#">NGÂN HÀNG LIÊN KẾT</a>
+          <a class="nav-link stylehover" href="#">LIÊN HỆ</a> -->
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!--slider-->
+  <div id="demo" class="carousel slide" data-bs-ride="carousel" style="z-index: 0;">
+
+    <!-- Indicators/dots // Nút chấm-->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+
+    </div>
+
+    <!-- The slideshow/carousel // ảnh-->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/img1.jpg" alt="Los Angeles" class="d-block"
+          style="width:100%; height: 600px;">
+      </div>
+      <div class="carousel-item">
+        <img src="img/img2.jpg" alt="Chicago" class="d-block" style="width:100%; height: 600px;;">
+      </div>
+    </div>
+
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+
+  <!--From đăng ký-->
+  <div class="wp-container" style="background-color:#eff7f3;">
+    <div class="container pt-4">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="text-success">ƯỚC TÍNH KHOẢNG VAY</h2>
+          <span class="text-secondary">Bạn vui lòng điền thông tin dưới đây</span>
+        </div>
+        <form name="form-googlesheet" id="form-googlesheet">
+          <div class="row mt-4">
+            <div class="col-md-2 col-sm-4 h4 fw-bold can-giua-div">Họ và tên(*)</div>
+            <div class="col-md-4 col-sm-8">
+              <div class="form-group">
+                <input type="text" class="form-control rounded-pill border-success form-control" id="hovaten"
+                  name="hovaten" placeholder="Nhập họ và tên">
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-4 text-left h4 fw-bold can-giua-div">Số điện thoại (*)</div>
+            <div class="col-md-4 col-sm-8">
+              <div class="form-group">
+                <input type="text" class="form-control rounded-pill border-success form-control" id="sdt" name="sdt"
+                  placeholder="Nhập số điện thoại">
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-2">
+            <div class="col-md-2 col-sm-4 h4 fw-bold can-giua-div">Nghề nghiệp</div>
+            <div class="col-md-4 col-sm-8">
+              <div class="form-group">
+                <select class="form-select rounded-pill border-suc  cess form-control" aria-label="Default select example"
+                  id="nghenghiep" name="nghenghiep">
+                  <option selected style="color: #999;"></option>
+                  <option value="1">Chủ Kinh Doanh/ Chủ Doanh Nghiệp</option>
+                  <option value="2">Kinh doanh online có kho hàng</option>
+                  <option value="3">Là tiểu thương/ Chủ sạp chợ</option>
+                  <option value="4">Đi làm hưởng lương có Hợp đồng lao động</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-4 text-left h4 fw-bold can-giua-div">Mặt hàng kinh doanh</div>
+            <div class="col-md-4 col-sm-8">
+              <div class="form-group">
+                <input type="text" class="form-control rounded-pill border-success form-control" id="mathangkinhdoanh"
+                  name="mathangkinhdoanh" placeholder="Vui lòng nhập mặt hàng kinh doanh (*)">
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-4 mb-4">
+            <span class="text-secondary">Dùng chuột để chọn khoản vay và thời hạn vay</span>
+          </div>
+
+          <div class="row">
+            <div class="col-md-3 h4 fw-bold can-giua-div">Số tiền vay</div>
+            <div class="col-md-9">
+              <br><br>
+              <!--Thanh rage selector-->
+              <div class="rangbar01">
+                <div class="bar-c">
+                  <div id="selector" class="bar-selector"></div>
+                  <div class="l">
+                    <div class="left">20 triệu</div>
+                    <div class="right">100 triệu</div>
+                  </div>
+                </div>
+              </div>
+              <!--Thanh rage-->
+            </div>
+          </div>
+
+          <div class="row mt-3">
+            <div class="col-md-3 h4 fw-bold can-giua-div">Thời gian vay</div>
+            <div class="col-md-9">
+              <!--Thanh rage selector2  -->
+              <br><br>
+              <div class="rangbar01">
+                <div class="bar-c">
+                  <div id="selector02" class="bar-selector"></div>
+                  <div class="l">
+                    <div class="left">6 tháng</div>
+                    <div class="right">12 tháng</div>
+                  </div>
+                </div>
+                <!--Thanh rage-->
+              </div>
+            </div>
+
+            <input type="hidden" name="money" value="20000000" id="money_data">
+            <input type="hidden" name="month" value="6" id="month_data">
+        </form>
+        <script language="javascript">
+          $(function () {
+            $("#selector").slider({
+              range: false,
+              min: 20000000,
+              max: 100000000,
+              step: 10000000,
+              value: 20000000,
+              create: function (event, ui) {
+                $('#selector .ui-slider-handle').append('<span id="money" name = "money">20.000.000đ</span>');
+              },
+              slide: function (event, ui) {
+                $('#selector .ui-slider-handle > span').html(formatCurrency(ui.value));
+              },
+              change: function (event, ui) {
+                var v = ui.value;
+                $('#money').val(v);
+                //Truyền value money vào input trống
+                document.getElementById('money_data').value = v;
+                // Gọi hàm tính toán
+                calculate();
+
+                //$('#money-txt').html(formatCurrency(v));
+                $('#selector .ui-slider-handle > span').html(formatCurrency(v));
+                // compute();
+              }
+            });
+            $("#selector02").slider({
+              range: false,
+              min: 6,
+              max: 12,
+              step: 1,
+              value: 6,
+              create: function (event, ui) {
+                $('#selector02 .ui-slider-handle').append('<span id = "month" name = "month">6 tháng</span>');
+              },
+              slide: function (event, ui) {
+                $('#selector02 .ui-slider-handle > span').html(ui.value + ' tháng');
+              },
+              change: function (event, ui) {
+                var v = ui.value;
+                $('#timepay').val(v);
+                //Truyền value money vào input trống
+                document.getElementById('month_data').value = v;
+                // Gọi hàm tính toán
+                calculate();
+                    
+                //$('#time-txt').html(v+' tháng');
+                $('#selector02 .ui-slider-handle > span').html(v + ' tháng');
+                // compute();
+              }
+            });
+          });
+        </script>
+
+
+        <div class="row mt-3 col-md-12"></div>
+        <div class="col-md-4 col-sm-12 h4 fw-bold can-giua-div">Số tiền cần trả hàng tháng</div>
+        <div class="col-md-5 col-sm-12 can-giua-div p-md-2 p-sm-2"><span
+            class="border-top border-bottom border-danger p-2 pl-2 p-md-2 align-items-center text-center"
+            style="background-color:#eff7f3; width:90%; height: 45px; justify-content: center; color: #339966; font-weight: bold;"><a
+              id="dream_result" style="font-size: 17px;"></a></span>
+        </div>
+        <div class="col-md-3 col-sm-12 pt-md-2 pt-sm-2"><button type="submit"
+            class="btn btn-success rounded-pill style-button" style="width: 90%; height: 55px; font-size: 20px;"
+            id="submit">Tư vấn vay ngay ></button></div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <!--Chọn ngân hàng-->
+  <hr width="1296px" size="1px" color="#339966" style="margin: 0 auto; margin-top: 15px;" />
+
+  <div id="table-tieude">
+    <h2 style="font-weight: bold; color: #339966;">ĐỐI TÁC TỐT NHẤT</h2>
+    <span>Chọn lọc những đối tác tốt nhất</span>
+  </div>
+
+  <div class="container container-chonnganhang1">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 table-reponsive table-reponsive-md">
+        <table class="table table-striped align-items-center text-center table-container table-borderless table-hover ">
+          <thead>
+            <tr style="background-color: #339966; color: #fff;">
+              <th scope="col">ĐỐI TÁC</th>
+              <th scope="col">LÃI SUẤT (NĂM)</th>
+              <th scope="col">HẠN VAY</th>
+              <th scope="col">LIÊN HỆ</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"><img src="img/Fe_Credit.png" class="picture-nganhang align-items-center"
+                  style="height: 100px;" /><a class="align-items-center"
+                  style="display: block; text-decoration: none; color: #666;">FE Credit</a>
+              </th>
+              <td style="padding-top: 4%;">47%</td>
+              <td style="padding-top: 4%;">1 Năm</td>
+              <td style="padding-top: 4%;"><button type="button" class="btn btn-success align-items-center rounded-pill"
+                  style="width: 200px; height: 40px;" data-bs-toggle="modal" data-bs-target="#demo-modal">ĐĂNG KÝ
+                  NGAY</button>
+                <!--<a href="#" style="display: block;" class="link">Xem ước tính khoản vay ></a>-->
+              </td>
+            </tr>
+            <tr>
+              <th scope="row"><img src="img/mafc.jpg" class="picture-nganhang align-items-center"
+                  style="height: 100px;" /><a class="align-items-center"
+                  style="display: block; text-decoration: none; color: #666;">Mirae Asset Finance</a>
+              </th>
+              <td style="padding-top: 4%;">40.56%</td>
+              <td style="padding-top: 4%;">1 Năm</td>
+              <td style="padding-top: 4%;"><button type="button" class="btn btn-success align-items-center rounded-pill"
+                  style="width: 200px; height: 40px; " data-bs-toggle="modal" data-bs-target="#demo-modal">ĐĂNG KÝ
+                  NGAY</button>
+                <!--<a href="#" style="display: block;" class="link">Xem ước tính khoản vay ></a>-->
+              </td>
+            </tr>
+
+
+
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  <!--Chọn ngân hàng-->
+
+  <!---Foter-->
+  <div class="foter-wrapper">
+    <div class="container pt-4" style="color: #fff;">
+      <div class="row">
+        <div class="col-md-4 col-sm-12 fs-3 fw-bold">Về chúng tôi</div>
+        <div class="col-md-4 col-sm-12 fs-3 fw-bold">Liên hệ</div>
+        <div class="col-md-4 col-sm-12 fs-3 fw-bold">Hỗ trợ khách hàng</div>
+        <div class="row">
+          <div class="col-md-4 col-sm-12 pt-4"><a href="#" class="foter-link">Trang chủ</a></div>
+          <div class="col-md-4 col-sm-12 pt-4"><a style="font-weight: bold;">Hotline:</a> 0916273959</div>
+          <div class="col-md-4 col-sm-12 pt-4"><a href="#" style="text-decoration: none;" class="foter-link">Vay thế
+              chấp
+              nhanh</a></div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-12 pt-4"><a href="#" class="foter-link">Giới Thiệu</a></div>
+          <div class="col-md-4 col-sm-12 pt-4"><a style="font-weight: bold;">Zalo:</a> 0916273959</div>
+          <div class="col-md-4 col-sm-12 pt-4"><a href="#" style="text-decoration: none;" class="foter-link">Hỗ trợ tư
+              vấn
+              24/24</a></div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-12 pt-4"><a href="#" class="foter-link">Liên hệ</a></div>
+          <div class="col-md-4 col-sm-12 pt-4"><a style="font-weight: bold;"></a></div>
+          <div class="col-md-4 col-sm-12 pt-4"><a href="#" style="text-decoration: none;" class="foter-link"></a></div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr width="100%" size="1px" color="#339966" style="margin: 0 auto; margin-top: 15px;" />
+  </div>
+
+  <!---Foter-->
+
+  <!-- Popup -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <!-- Modal -->
+        <div class="modal fade" id="demo-modal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+          tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <!-- Modal-header -->
+              <div class="modal-header">
+                <h5 class="modal-title h2" id="exampleModalToggleLabel" style="color: #339966;">ĐĂNG KÝ TƯ VẤN</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                  style="position: absolute; right: 40px;"></button>
+              </div>
+              <!-- END Modal-header -->
+
+              <!-- Modal body -->
+              <form name="form-googlesheet1">
+                <div class="modal-body p-2">
+                  <div class="container">
+                    <div class="row pb-3">
+                      <div class="col-md-12 pt-3 pb-3"><span>Nhập thông tin liên hệ để được tư vấn sớm nhất</span></div>
+                      <div class="col-md-4 h6">Họ và tên(*)</div>
+                      <div class="col-md-8"><input type="text" class="form-control" id="hovaten" name="hovaten"
+                          placeholder="Họ và tên"></div>
+                    </div>
+                    <div class="row pb-3">
+                      <div class="col-md-4 h6">Số điện thoại(*)</div>
+                      <div class="col-md-8"><input type="number" class="form-control" id="sdt" name="sdt"
+                          placeholder="Số điện thoại">
+                      </div>
+                    </div>
+                    <div class="row pb-3">
+                      <div class="col-md-4 h6">Số tiền vay</div>
+                      <div class="col-md-8"><input type="text" class="form-control" id="Sotienvayduocnhap"
+                          name="Sotienvayduocnhap" placeholder="Nhập số tiền vay">
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                </div>
+                <!-- END Modal body -->
+
+                <!-- modal-foter -->
+                <div class="modal-footer">
+                  <button class="btn btn-success" id="submit" data-bs-toggle="modal" data-bs-dismiss="modal">Nhận yêu
+                    cầu tư
+                    vấn</button>
+                </div>
+              </form>
+
+              <!--end modal-foter -->
+              <script>
+                const scriptURL1 = 'https://script.google.com/macros/s/AKfycbx-rMpuuPMj06ec4XY_WSwOOtIZ3-SjYpItpJrNQlNF7QzaO05qlXbBq2Fl5jFmaTLTbw/exec'
+                const form1 = document.forms['form-googlesheet1']
+                // console.log(form);
+                form1.addEventListener('submit', e => {
+                  e.preventDefault()
+                  fetch(scriptURL1, { method: 'POST', body: new FormData(form1) })
+                    .then(
+                      response => alert('Đề nghị tư vấn khoản vay của quý khách được ghi nhận! Nhân viên tư vấn sẽ liên hệ quý khách.', response)
+                    )
+                    .catch(error => alert('Vui lòng thử lại !', error.message))
+                })
+              </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Script Bootstraps-->
+  <script src="popper.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+
+
+  <!-- Popup tự xuất hiện khi F5 -->
+  <script>
+    // Something wrong: $(...).modal is not a function
+    // $(document).ready(function () {
+    //   $("#demo-modal").modal();
+    // });
+  </script>
+
+  <script>
+    // Create our number formatter.
+    var formatter = new Intl.NumberFormat('it-IT', {
+      style: 'currency',
+      currency: 'VND',
+
+      // These options are needed to round to whole numbers if that's what you want.
+      //minimumFractionDigits: 0, // (this suffices for whole numbers, but will print 2500.10 as $2,500.1)
+      //maximumFractionDigits: 0, // (causes 2500.99 to be printed as $2,501)
+    });
+
+
+    // when range changed, log value of money
+
+
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx-rMpuuPMj06ec4XY_WSwOOtIZ3-SjYpItpJrNQlNF7QzaO05qlXbBq2Fl5jFmaTLTbw/exec'
+    const form = document.forms['form-googlesheet']
+    console.log(new FormData(form));
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+
+      const formData = new FormData(form);
+      //get 2 values of range
+      // let money = document.getElementById('money').value;
+      // let month = document.getElementById('month').value;
+
+      // lay data tu cho khac vao
+      // formData.append('money', money);
+      // formData.append('month', month);
+
+      fetch(scriptURL, { method: 'POST', body: formData })
+        .then(
+          response => {
+            document.getElementById('Spinner').style.display = 'none'; //Ẩn Spinner khi gửi dữ liệu qua GG Sheet xong
+            document.getElementById("form-googlesheet").reset();
+            alert('Đề nghị tư vấn khoản vay của quý khách được ghi nhận! Nhân viên tư vấn sẽ liên hệ quý khách.', response);
+          }
+        )
+        // .then(
+        //   document.getElementById('Spinner').style.display = 'none'
+        // )
+        .catch(error => alert('Đăng ký khoản vay thành công!', error.message))
+    })
+    //Thêm [] vào form
+
+    // Tạo event onchange cho object id=money, 
+    // let money = document.getElementById('money_data').value;
+    // money.addEventListener('change', function(){
+    //   alert(1);
+    // })
+    // console.log(money);
+
+
+    function calculate() {
+      // Lấy 2 giá trị money, month
+      let money = parseInt(document.getElementById('money_data').value);
+      let month = parseInt(document.getElementById('month_data').value);
+      let money_of_1t;
+      // console.log(typeof money);
+
+      // Thực hiện tính toán
+      money_of_1t = (money / month) + (money * 0, 035);
+      console.log(money_of_1t);
+      // In ra html
+      // console.log(formatter.format(money_of_1t));
+      document.getElementById('dream_result').innerHTML = 'Tạm tính: ' + formatter.format(money_of_1t) + '/Tháng';
+    }
+
+  </script>
+
+
+  <!-- Ẩn hiên Spinner -->
+  <script>
+    // Check_Submit = document.getElementById('submit');
+    // function Show_Hidden_Spiner(Check_Submit){
+    //   if(document.getElementById('submit').onclick){
+    //     document.getElementById('Spinner').style.display = 'Block';
+    //   }
+    // }
+
+
+    document.getElementById('submit').onclick = function () {
+
+      document.getElementById('Spinner').style.display = 'Block';
+    }
+
+
+
+  </script>
+
+</body>
+
+</html>
